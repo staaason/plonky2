@@ -169,7 +169,7 @@ impl<F: RichField + Extendable<D>, const D: usize, const B: usize> PackedEvaluab
     }
 }
 
-#[derive(Debug, Default)]
+#[derive(Debug, Default, Clone)]
 pub struct BaseSplitGenerator<const B: usize> {
     row: usize,
     num_limbs: usize,
